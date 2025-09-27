@@ -15,7 +15,7 @@ load_dotenv()
 app=FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # React app ka URL
+    allow_origins=["https://vid-vivid-frontend.vercel.app"],  # React app ka URL
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
     allow_headers=["*"],  # Allow all headers
